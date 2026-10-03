@@ -3,10 +3,10 @@
 import { motion } from "framer-motion"
 
 const features = [
-  { icon: "○", label: "Zero Face", sub: "Glowing eyes that react to you" },
-  { icon: "◎", label: "Zero Voice", sub: "Whispers answers in your ear" },
-  { icon: "◉", label: "Zero Sight", sub: "Sees what you see, live" },
-  { icon: "✦", label: "Zero Mind", sub: "Always thinking, always ready" },
+  { icon: "♥", label: "Heart Guardian", sub: "Monitors your heart 24/7, even while you sleep" },
+  { icon: "○", label: "Oxygen Watcher", sub: "SpO2 alerts before you feel breathless" },
+  { icon: "⚡", label: "Fall Shield", sub: "Detects falls, calls for help instantly" },
+  { icon: "✦", label: "Wellness Coach", sub: "HRV-based daily stress & recovery insights" },
 ]
 
 export default function Companion() {
@@ -31,7 +31,7 @@ export default function Companion() {
               marginBottom: 14,
             }}
           >
-            MEET ZERO
+            YOUR HEALTH COMPANION
           </p>
           <h2
             style={{
@@ -44,9 +44,9 @@ export default function Companion() {
               margin: 0,
             }}
           >
-            Not a ring.
+            A ring that cares
             <br />
-            <span style={{ color: "#00C8FF" }}>A mind.</span>
+            <span style={{ color: "#00C8FF" }}>about you.</span>
           </h2>
           <p
             style={{
@@ -54,17 +54,17 @@ export default function Companion() {
               fontSize: 14,
               color: "#888880",
               lineHeight: 1.65,
-              maxWidth: 320,
+              maxWidth: 360,
               marginTop: 14,
               marginBottom: 0,
             }}
           >
-            Eyes, voice, and AI — worn on your finger. Zero sees the world with you and acts before you ask.
+            Clinical-grade health sensors in a ring you barely notice. Innovexa watches your vitals, detects emergencies, and keeps your loved ones informed.
           </p>
         </div>
       </div>
 
-      {/* Image with overlaid feature pills */}
+      {/* Image */}
       <div
         style={{
           position: "relative",
@@ -74,8 +74,8 @@ export default function Companion() {
         }}
       >
         <img
-          src="/zero_ring_chameleon.jpg"
-          alt="Zero Ring — AI-powered smart ring featured with a transparent mechanical chameleon"
+          src="/innovexa_ring_chameleon.jpg"
+          alt="Innovexa Ring — AI-powered health smart ring for fall detection, heart rate, and SpO2 monitoring"
           style={{
             width: "100%",
             display: "block",
@@ -98,7 +98,7 @@ export default function Companion() {
         />
       </div>
 
-      {/* 4 feature cards in a single rounded card — matches AirMouse style */}
+      {/* 4 health feature cards */}
       <div className="px-4 pb-10 pt-4 md:px-6">
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div
@@ -128,7 +128,7 @@ export default function Companion() {
                     style={{
                       fontFamily: "var(--font-space-mono)",
                       fontSize: 18,
-                      color: "#00C8FF",
+                      color: "#FF4D6D",
                       lineHeight: 1,
                       marginBottom: 6,
                     }}

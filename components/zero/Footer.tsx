@@ -29,7 +29,7 @@ export default function Footer() {
               marginTop: 8,
             }}
           >
-            Built in India 🇮🇳 · Zero Tech
+            Built in India 🇮🇳 · Innovexa Tech
           </p>
         </div>
 
@@ -45,9 +45,10 @@ export default function Footer() {
           }}
         >
           {[
-            { label: "Privacy", href: "#" },
-            { label: "Contact", href: "#" },
-            { label: "Docs", href: "/docs" }
+            { label: "Vitals", href: "/#vitals" },
+            { label: "Features", href: "/#features" },
+            { label: "Specs", href: "/#specs" },
+            { label: "Pricing", href: "/#pricing" }
           ].map((item) => (
             <a
               key={item.label}
@@ -94,7 +95,7 @@ export default function Footer() {
             color: "#444444",
           }}
         >
-          © 2026 Zero Tech. All rights reserved.
+          © 2026 Innovexa Tech. All rights reserved.
         </span>
         <span
           style={{
@@ -103,7 +104,7 @@ export default function Footer() {
             color: "#444444",
           }}
         >
-          zero-tech.in
+          innovexa-tech.in
         </span>
       </div>
       </div>

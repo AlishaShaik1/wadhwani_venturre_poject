@@ -5,18 +5,18 @@ import { useRef, useState, useEffect } from "react"
 import PreorderModal from "./PreorderModal"
 
 const features = [
-  "Zero Ring hardware",
-  "Zero Android app — lifetime",
+  "Innovexa Ring hardware",
+  "Innovexa Android app — lifetime",
   "All AI models included",
   "Free updates forever",
-  "Zero Charge dock included",
+  "Innovexa Charge dock included",
   "Priority support",
 ]
 
 const plans = [
-  { tag: "EARLY BIRD", price: "₹11,999", subtext: "First 100 orders only.", highlight: true, modal: "early" as const },
-  { tag: "STANDARD", price: "₹14,999", subtext: "Regular pre-order price.", highlight: false, modal: "regular" as const },
-  { tag: "GLOBAL", price: "$199", subtext: "Kickstarter international.", highlight: false, modal: "global" as const },
+  { tag: "EARLY BIRD", price: "₹2,900", subtext: "First 100 orders only.", highlight: true, modal: "early" as const },
+  { tag: "STANDARD", price: "₹3,200", subtext: "Regular pre-order price.", highlight: false, modal: "regular" as const },
+  { tag: "GLOBAL", price: "$60", subtext: "Kickstarter international.", highlight: false, modal: "global" as const },
 ]
 
 export default function Pricing() {

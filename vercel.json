@@ -1,5 +1,5 @@
 {
-  "name": "zero-ring-ai",
+  "name": "innovexa-ring-ai",
   "functions": {
     "app/api/**/*.ts": {
       "maxDuration": 1800

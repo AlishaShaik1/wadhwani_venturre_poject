@@ -4,36 +4,36 @@ export default function StructuredData() {
     "@graph": [
       {
         "@type": "Product",
-        "name": "Zero Ring",
+        "name": "Innovexa Ring",
         "image": [
-          "https://zero-ring-ai.vercel.app/zero_ring_dragonfly.png"
+          "https://innovexa-ring-ai.vercel.app/innovexa_ring_dragonfly.png"
         ],
-        "description": "Zero is not a device. Zero is your AI companion. It talks, thinks, acts — all from your ring. The ultimate wearable AI technology.",
+        "description": "Innovexa is not a device. Innovexa is your AI companion. It talks, thinks, acts — all from your ring. The ultimate wearable AI technology.",
         "brand": {
           "@type": "Brand",
-          "name": "Zero"
+          "name": "Innovexa"
         },
         "offers": {
           "@type": "Offer",
-          "url": "https://zero-ring-ai.vercel.app",
+          "url": "https://innovexa-ring-ai.vercel.app",
           "priceCurrency": "USD",
-          "price": "199.00",
+          "price": "60.00",
           "itemCondition": "https://schema.org/NewCondition",
           "availability": "https://schema.org/PreOrder",
           "seller": {
             "@type": "Organization",
-            "name": "Zero Technologies"
+            "name": "Innovexa Technologies"
           }
         }
       },
       {
         "@type": "Organization",
-        "name": "Zero",
-        "url": "https://zero-ring-ai.vercel.app",
-        "logo": "https://zero-ring-ai.vercel.app/zero_ring_dragonfly.png",
+        "name": "Innovexa",
+        "url": "https://innovexa-ring-ai.vercel.app",
+        "logo": "https://innovexa-ring-ai.vercel.app/innovexa_ring_dragonfly.png",
         "sameAs": [
-          "https://twitter.com/ZeroRing",
-          "https://instagram.com/ZeroRingAI"
+          "https://twitter.com/InnovexaRing",
+          "https://instagram.com/InnovexaRingAI"
         ]
       },
       {
@@ -41,18 +41,18 @@ export default function StructuredData() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is the Zero Ring?",
+            "name": "What is the Innovexa Ring?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The Zero Ring is an AI-powered smart ring that acts as your personal voice assistant. It allows you to speak to an advanced AI directly from your finger."
+              "text": "The Innovexa Ring is an AI-powered smart ring that acts as your personal voice assistant. It allows you to speak to an advanced AI directly from your finger."
             }
           },
           {
             "@type": "Question",
-            "name": "When does the Zero Ring ship?",
+            "name": "When does the Innovexa Ring ship?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The Zero Ring is currently available for pre-order and will begin shipping in Q3 2026."
+              "text": "The Innovexa Ring is currently available for pre-order and will begin shipping in Q3 2026."
             }
           }
         ]

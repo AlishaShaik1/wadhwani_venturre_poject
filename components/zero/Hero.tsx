@@ -7,7 +7,7 @@ import PreorderModal from "./PreorderModal"
 const STATS = [
   { val: "Q3 2026", label: "Ships" },
   { val: "100", label: "First batch" },
-  { val: "$199", label: "Kickstarter" },
+  { val: "$60", label: "Kickstarter" },
   { val: "3 AI", label: "Models" },
 ]
 
@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 15.5, color: "#555550", lineHeight: 1.65, maxWidth: 500, marginTop: 14 }}
           >
-            Zero is not a device. It talks, thinks, acts — all from your ring.
+            Innovexa monitors your heart rate, SpO2, and detects falls — 24/7 health protection worn on your finger.
           </motion.p>
 
           {/* ═══════════════════════════════════════════════════════════
@@ -83,8 +83,8 @@ export default function Hero() {
             {/* The Ring Ecosystem Diagram */}
             <div style={{ display: "flex", justifyContent: "center", width: "100%", borderRadius: 14, overflow: "hidden", background: "#FAF9F6" }}>
               <img
-                src="/zero_network_ecosystem.png"
-                alt="Zero Ring — One Network. Everything Connected. Physical life to Digital intelligence."
+                src="/innovexa_network_ecosystem.png"
+                alt="Innovexa Ring — One Network. Everything Connected. Physical life to Digital intelligence."
                 style={{
                   width: "100%",
                   height: "auto",
@@ -106,10 +106,10 @@ export default function Hero() {
               display: "flex", justifyContent: "space-between", alignItems: "center"
             }}>
               <span style={{ fontFamily: "var(--font-space-mono)", fontSize: 10, color: "#666660", letterSpacing: "1.5px", textTransform: "uppercase", fontWeight: 700 }}>
-                Zero Ring · Neural Ecosystem
+                Innovexa Ring · Health Ecosystem
               </span>
               <span style={{ fontFamily: "var(--font-space-mono)", fontSize: 10, color: "#00C8FF", fontWeight: 800 }}>
-                ONE NETWORK · SIZES 6–12
+                HEALTH + AI · SIZES 6–12
               </span>
             </div>
           </motion.div>
@@ -126,7 +126,7 @@ export default function Hero() {
               style={{ background: "#0A0A0A", color: "#FFFFFF", border: "1.5px solid #0A0A0A", borderRadius: 9, padding: "13px 24px", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 14.5, cursor: "pointer", boxShadow: "3px 3px 0 #00C8FF", transition: "all 150ms", minHeight: 46 }}
               onMouseEnter={e => { const b = e.currentTarget; b.style.transform = "translate(-1px,-1px)"; b.style.boxShadow = "4px 4px 0 #00C8FF" }}
               onMouseLeave={e => { const b = e.currentTarget; b.style.transform = "translate(0,0)"; b.style.boxShadow = "3px 3px 0 #00C8FF" }}
-            >Pre-order — ₹14,999</button>
+            >Pre-order — ₹3,200</button>
 
             <button
               id="hero-earlybird-btn"
@@ -134,7 +134,7 @@ export default function Hero() {
               style={{ background: "#FFFFFF", color: "#0A0A0A", border: "1.5px solid #0A0A0A", borderRadius: 9, padding: "13px 24px", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 14.5, cursor: "pointer", transition: "all 150ms", minHeight: 46, boxShadow: "2px 2px 0 #0A0A0A" }}
               onMouseEnter={e => { const b = e.currentTarget; b.style.transform = "translate(-1px,-1px)"; b.style.boxShadow = "3px 3px 0 #0A0A0A" }}
               onMouseLeave={e => { const b = e.currentTarget; b.style.transform = "translate(0,0)"; b.style.boxShadow = "2px 2px 0 #0A0A0A" }}
-            >🔥 Early bird ₹11,999 →</button>
+            >🔥 Early bird ₹2,900 →</button>
           </motion.div>
 
           {/* Trust Caption */}

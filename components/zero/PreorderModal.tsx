@@ -10,19 +10,12 @@ interface PreorderModalProps {
 }
 
 const PLANS = {
-  early:   { label: "Early Bird",    price: "₹11,999", note: "First 100 orders only" },
-  regular: { label: "Pre-order",     price: "₹14,999", note: "Ships Q3 2026" },
-  global:  { label: "Global Launch", price: "$199",    note: "Kickstarter launch" },
+  early:   { label: "Early Bird",    price: "₹2,900", note: "First 100 orders only" },
+  regular: { label: "Pre-order",     price: "₹3,200", note: "Ships Q3 2026" },
+  global:  { label: "Global Launch", price: "$60",     note: "Kickstarter launch" },
 }
 
-// ─── WEB3FORMS SETUP (100% RELIABLE & FREE) ─────────────────────────────────
-// FormSubmit servers are currently down (Error 521) and they block iframes.
-// Let's use Web3Forms, the most reliable free service for React apps.
-// 1. Go to https://web3forms.com/
-// 2. Enter founderzero1@gmail.com and click "Create Access Key"
-// 3. Check your email for the key and paste it below:
-const WEB3FORMS_KEY = "4ebb526a-c65f-4b49-9bd7-fb1589ace1e1"
-// ─────────────────────────────────────────────────────────────────────────────
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "4ebb526a-c65f-4b49-9bd7-fb1589ace1e1"
 
 export default function PreorderModal({ isOpen, onClose, plan = "early" }: PreorderModalProps) {
   const selected = PLANS[plan]
@@ -56,8 +49,8 @@ export default function PreorderModal({ isOpen, onClose, plan = "early" }: Preor
         },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: `🔔 Zero Ring Pre-order — ${selected.label} (${selected.price})`,
-          from_name: "Zero Ring Website",
+          subject: `🔔 Innovexa Ring Pre-order — ${selected.label} (${selected.price})`,
+          from_name: "Innovexa Ring Website",
           "Customer Name": form.name,
           "Customer Email": form.email,
           "Phone Number": form.phone || "—",
@@ -98,7 +91,7 @@ export default function PreorderModal({ isOpen, onClose, plan = "early" }: Preor
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
           transition={{ duration: 0.18 }}
           onClick={onClose}
-          role="dialog" aria-modal="true" aria-label="Pre-order Zero Ring"
+          role="dialog" aria-modal="true" aria-label="Pre-order Innovexa Ring"
           style={{ position: "fixed", inset: 0, zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center", padding: "16px", background: "rgba(10,10,10,0.6)", backdropFilter: "blur(6px)" }}
         >
           <motion.div
@@ -126,7 +119,7 @@ export default function PreorderModal({ isOpen, onClose, plan = "early" }: Preor
                     ✦ PRE-ORDER
                   </span>
                   <h2 style={{ fontFamily: "var(--font-space-grotesk)", fontWeight: 800, fontSize: 22, color: "#0A0A0A", margin: "0 0 4px", letterSpacing: "-0.5px" }}>
-                    Reserve your Zero Ring
+                    Reserve your Innovexa Ring
                   </h2>
                   <p style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 13, color: "#666660", margin: 0 }}>
                     {selected.note} ·{" "}
@@ -149,7 +142,7 @@ export default function PreorderModal({ isOpen, onClose, plan = "early" }: Preor
                 <div style={{ width: 56, height: 56, borderRadius: "50%", background: "#00C8FF", border: "2px solid #0A0A0A", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px", fontSize: 22, color: "#0A0A0A", fontWeight: 700 }}>✓</div>
                 <h3 style={{ fontFamily: "var(--font-space-grotesk)", fontWeight: 800, fontSize: 20, color: "#0A0A0A", margin: "0 0 8px" }}>You&apos;re in! 🎉</h3>
                 <p style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 13, color: "#666660", lineHeight: 1.65, margin: "0 0 20px" }}>
-                  Confirmation sent to <strong style={{ color: "#0A0A0A" }}>{form.email}</strong>.<br />Your Zero Ring ships Q3 2026.
+                  Confirmation sent to <strong style={{ color: "#0A0A0A" }}>{form.email}</strong>.<br />Your Innovexa Ring ships Q3 2026.
                 </p>
                 <button onClick={onClose}
                   style={{ background: "#0A0A0A", color: "#FFFFFF", border: "2px solid #0A0A0A", borderRadius: 8, padding: "11px 28px", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 14, cursor: "pointer", boxShadow: "3px 3px 0 #00C8FF" }}>

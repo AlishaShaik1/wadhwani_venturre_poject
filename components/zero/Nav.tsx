@@ -4,8 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useState } from "react"
 import ZeroLogo from "./ZeroLogo"
 import PreorderModal from "./PreorderModal"
+import MobileNav from "./MobileNav"
 import { Menu } from "lucide-react"
-import { PageNav } from "@/components/chat/nav/PageNav"
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -31,13 +31,13 @@ export default function Nav() {
           className="md:px-6"
         >
           {/* Logo */}
-          <a href="/" aria-label="Zero Ring home" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+          <a href="/" aria-label="Innovexa Ring home" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <ZeroLogo size={0.28} color="#0A0A0A" />
           </a>
 
           {/* Desktop links */}
           <nav aria-label="Main navigation" className="hidden md:flex" style={{ gap: 28, alignItems: "center" }}>
-            {[["Features", "/#features"], ["Specs", "/#specs"], ["Pricing", "/#pricing"]].map(([label, href]) => (
+            {[["Vitals", "/#vitals"], ["Features", "/#features"], ["Specs", "/#specs"], ["Pricing", "/#pricing"]].map(([label, href]) => (
               <a
                 key={label} href={href}
                 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 13, fontWeight: 600, color: "#555550", textDecoration: "none", transition: "color 150ms" }}
@@ -56,12 +56,13 @@ export default function Nav() {
               onMouseEnter={e => { const b = e.currentTarget as HTMLButtonElement; b.style.transform = "translate(-1px,-1px)"; b.style.boxShadow = "4px 4px 0 #00C8FF" }}
               onMouseLeave={e => { const b = e.currentTarget as HTMLButtonElement; b.style.transform = "translate(0,0)"; b.style.boxShadow = "3px 3px 0 #00C8FF" }}
             >
-              Pre-order ₹14,999
+              Pre-order ₹3,200
             </button>
             
-            {/* Hamburger Button */}
+            {/* Hamburger Button for Mobile */}
             <button
               onClick={() => setMenuOpen(true)}
+              className="md:hidden"
               style={{ background: "transparent", border: "none", cursor: "pointer", color: "#0A0A0A", padding: 4 }}
               aria-label="Open Menu"
             >
@@ -71,8 +72,8 @@ export default function Nav() {
         </div>
       </motion.nav>
 
-      {/* Sleek Side Drawer with 4 Sections */}
-      <PageNav open={menuOpen} onClose={() => setMenuOpen(false)} />
+      {/* Mobile Drawer */}
+      <MobileNav open={menuOpen} onClose={() => setMenuOpen(false)} onPreorder={() => setOpen(true)} />
     </>
   )
 }

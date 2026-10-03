@@ -39,7 +39,7 @@ export default function FinalCTA() {
               onMouseEnter={e => { const b = e.currentTarget as HTMLButtonElement; b.style.transform = "translate(-2px,-2px)"; b.style.boxShadow = "4px 4px 0 #F4F3EF" }}
               onMouseLeave={e => { const b = e.currentTarget as HTMLButtonElement; b.style.transform = "translate(0,0)"; b.style.boxShadow = "none" }}
             >
-              Pre-order ₹14,999 →
+              Pre-order ₹3,200 →
             </button>
             <button
               onClick={() => setModal("early")}
@@ -47,7 +47,7 @@ export default function FinalCTA() {
               onMouseEnter={e => { const b = e.currentTarget as HTMLButtonElement; b.style.background = "#F4F3EF"; b.style.color = "#0A0A0A" }}
               onMouseLeave={e => { const b = e.currentTarget as HTMLButtonElement; b.style.background = "transparent"; b.style.color = "#F4F3EF" }}
             >
-              Early bird ₹11,999
+              Early bird ₹2,900
             </button>
           </div>
           

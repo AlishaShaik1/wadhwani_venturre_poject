@@ -15,12 +15,18 @@
   --ring: #00C8FF;
   --radius: 0.625rem;
 
-  /* Zero tokens */
-  --zero-bg:     #F4F3EF;
-  --zero-surface: #FFFFFF;
-  --zero-ink:    #0A0A0A;
-  --zero-muted:  #666660;
-  --zero-cyan:   #00C8FF;
+  /* Innovexa tokens */
+  --innovexa-bg:     #F4F3EF;
+  --innovexa-surface: #FFFFFF;
+  --innovexa-ink:    #0A0A0A;
+  --innovexa-muted:  #666660;
+  --innovexa-cyan:   #00C8FF;
+  /* Legacy aliases */
+  --zero-bg:     var(--innovexa-bg);
+  --zero-surface: var(--innovexa-surface);
+  --zero-ink:    var(--innovexa-ink);
+  --zero-muted:  var(--innovexa-muted);
+  --zero-cyan:   var(--innovexa-cyan);
 }
 
 @theme inline {
@@ -41,8 +47,8 @@
     outline-color: #00C8FF;
   }
   body {
-    background: var(--zero-bg);
-    color: var(--zero-ink);
+    background: var(--innovexa-bg);
+    color: var(--innovexa-ink);
     font-family: var(--font-space-grotesk), system-ui, sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;

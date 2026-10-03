@@ -12,7 +12,7 @@ export default function ZeroLogo({ size = 1, color = "#0A0A0A" }: ZeroLogoProps)
   return (
     <img 
       src="/logo.png?v=2" 
-      alt="Zero AI Logo" 
+      alt="Innovexa AI Logo" 
       style={{ 
         height: `${h}px`, 
         width: 'auto', 
@@ -27,3 +27,5 @@ export default function ZeroLogo({ size = 1, color = "#0A0A0A" }: ZeroLogoProps)
   )
 }
 
+
+export const InnovexaLogo = ZeroLogo;
